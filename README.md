@@ -10,6 +10,7 @@
 * [Seaborn](https://www.datacamp.com/community/tutorials/seaborn-python-tutorial#sm)
 * [Sklearn](https://machinelearningmastery.com/a-gentle-introduction-to-scikit-learn-a-python-machine-learning-library/)
 * [matplotlib](http://ipython.readthedocs.io/en/stable/interactive/plotting.html)
+* [Image-Keras: Taeseung Lee](https://github.com/Headstart-DS-2018/Image-keras)
 * [Keras 2](https://blog.keras.io/introducing-keras-2.html)
 * [CBC-recycle](https://www.cbc.ca/news/business/clothes-recycling-marketplace-1.4493490)
 * [Treehugger-fastfashion](https://www.treehugger.com/sustainable-fashion/recycling-wont-fix-fast-fashion-problem.html)
