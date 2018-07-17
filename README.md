@@ -7,6 +7,10 @@
 * [numpy](https://jakevdp.github.io/PythonDataScienceHandbook/02.02-the-basics-of-numpy-arrays.htmln)
 * [pandas](https://towardsdatascience.com/a-quick-introduction-to-the-pandas-python-library-f1b678f34673)
 * [ImageDataGenerator](https://keras.io/preprocessing/image/)
+* [Seaborn](https://www.datacamp.com/community/tutorials/seaborn-python-tutorial#sm)
+* [Sklearn](https://machinelearningmastery.com/a-gentle-introduction-to-scikit-learn-a-python-machine-learning-library/)
+* [matplotlib](http://ipython.readthedocs.io/en/stable/interactive/plotting.html)
+
 * [CBC-recycle](https://www.cbc.ca/news/business/clothes-recycling-marketplace-1.4493490)
 * [Treehugger-fastfashion](https://www.treehugger.com/sustainable-fashion/recycling-wont-fix-fast-fashion-problem.html)
 
