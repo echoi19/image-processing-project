@@ -54,27 +54,23 @@ batch_size = 16
 
 
 def save_bottlebeck_features():
-    print(1)
     datagen = ImageDataGenerator(rescale=1. / 255)
 
     # build the VGG16 network
     model = applications.VGG16(include_top=False, weights='imagenet')
 
-    print(2)
     generator = datagen.flow_from_directory(
         train_data_dir,
         target_size=(img_width, img_height),
         batch_size=batch_size,
         class_mode=None,
         shuffle=False)
-    print(2.5)
     bottleneck_features_train = model.predict_generator(
         generator, nb_train_samples // batch_size)
     # np.save(open('bottleneck_features_train.npy', 'w'),
     #         bottleneck_features_train)
     np.save('bottleneck_features_train.npy', bottleneck_features_train)
-
-    print(3)
+    
     generator = datagen.flow_from_directory(
         validation_data_dir,
         target_size=(img_width, img_height),
