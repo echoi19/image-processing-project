@@ -14,26 +14,50 @@ In our setup, we:
 So that we have 1000 training examples for each class, and 400 validation examples for each class.
 In summary, this is our directory structure:
 ```
-data/
+clothes/
     train/
-        dogs/
-            dog001.jpg
-            dog002.jpg
+        top/
+            tshirts/
+                tshirts001.jpg
+                tshirts002.jpg
+                ...
+            jackets/
+                jackets001.jpg
+                jackets002.jpg
+                ...
             ...
-        cats/
-            cat001.jpg
-            cat002.jpg
+        bottom/
+            pants/
+                pants001.jpg
+                pants002.jpg
+                ...
+            shorts/
+                shorts001.jpg
+                shorts002.jpg
+                ...
             ...
     validation/
-        dogs/
-            dog001.jpg
-            dog002.jpg
+        top/
+            tshirts/
+                tshirts010.jpg
+                tshirts011.jpg
+                ...
+            jackets/
+                jackets010.jpg
+                jackets011.jpg
+                ...
             ...
-        cats/
-            cat001.jpg
-            cat002.jpg
+        bottom/
+            pants/
+                pants010.jpg
+                pants011.jpg
+                ...
+            shorts/
+                shorts010.jpg
+                shorts011.jpg
+                ...
             ...
-```
+``` 
 '''
 
 from keras import applications
@@ -49,8 +73,8 @@ top_model_weights_path = 'fc_model.h5'
 # dimensions of our images.
 img_width, img_height = 150, 150
 
-train_data_dir = 'data/train'
-validation_data_dir = 'data/validation'
+train_data_dir = '../clothes/train'
+validation_data_dir = '../clothes/validation'
 nb_train_samples = 1600
 nb_validation_samples = 800
 epochs = 2

@@ -14,26 +14,50 @@ In our setup, we:
 So that we have 1000 training examples for each class, and 400 validation examples for each class.
 In summary, this is our directory structure:
 ```
-data/
+clothes/
     train/
-        dogs/
-            dog001.jpg
-            dog002.jpg
+        top/
+            tshirts/
+                tshirts001.jpg
+                tshirts002.jpg
+                ...
+            jackets/
+                jackets001.jpg
+                jackets002.jpg
+                ...
             ...
-        cats/
-            cat001.jpg
-            cat002.jpg
+        bottom/
+            pants/
+                pants001.jpg
+                pants002.jpg
+                ...
+            shorts/
+                shorts001.jpg
+                shorts002.jpg
+                ...
             ...
     validation/
-        dogs/
-            dog001.jpg
-            dog002.jpg
+        top/
+            tshirts/
+                tshirts010.jpg
+                tshirts011.jpg
+                ...
+            jackets/
+                jackets010.jpg
+                jackets011.jpg
+                ...
             ...
-        cats/
-            cat001.jpg
-            cat002.jpg
+        bottom/
+            pants/
+                pants010.jpg
+                pants011.jpg
+                ...
+            shorts/
+                shorts010.jpg
+                shorts011.jpg
+                ...
             ...
-```
+``` 
 '''
 import numpy as np
 from keras.preprocessing.image import ImageDataGenerator
@@ -45,36 +69,32 @@ from keras import applications
 img_width, img_height = 150, 150
 
 top_model_weights_path = 'bottleneck_fc_model.h5'
-train_data_dir = 'data/train'
-validation_data_dir = 'data/validation'
-nb_train_samples = 64
-nb_validation_samples = 32
+train_data_dir = '../clothes/train'
+validation_data_dir = '../clothes/validation'
+nb_train_samples = 2000
+nb_validation_samples = 800
 epochs = 50
 batch_size = 16
 
 
 def save_bottlebeck_features():
-    print(1)
     datagen = ImageDataGenerator(rescale=1. / 255)
 
     # build the VGG16 network
     model = applications.VGG16(include_top=False, weights='imagenet')
 
-    print(2)
     generator = datagen.flow_from_directory(
         train_data_dir,
         target_size=(img_width, img_height),
         batch_size=batch_size,
         class_mode=None,
         shuffle=False)
-    print(2.5)
     bottleneck_features_train = model.predict_generator(
         generator, nb_train_samples // batch_size)
     # np.save(open('bottleneck_features_train.npy', 'w'),
     #         bottleneck_features_train)
     np.save('bottleneck_features_train.npy', bottleneck_features_train)
 
-    print(3)
     generator = datagen.flow_from_directory(
         validation_data_dir,
         target_size=(img_width, img_height),
