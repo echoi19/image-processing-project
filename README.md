@@ -12,6 +12,9 @@
 * [matplotlib](http://ipython.readthedocs.io/en/stable/interactive/plotting.html)
 * [Image-Keras: Taeseung Lee](https://github.com/Headstart-DS-2018/Image-keras)
 * [Keras 2](https://blog.keras.io/introducing-keras-2.html)
+* [Keras FAQ](https://keras.io/getting-started/faq/)
+* [Convolutional Neural Networks for Fashion Classification and Object Detection](http://cs231n.stanford.edu/reports/2015/pdfs/BLAO_KJAG_CS231N_FinalPaperFashionClassification.pdf)
+* [Fashion and Apparel Classification using Convolutional Neural Networks](http://ceur-ws.org/Vol-2009/fmt-proceedings-2017-paper2.pdf)
 * [CBC-recycle](https://www.cbc.ca/news/business/clothes-recycling-marketplace-1.4493490)
 * [Treehugger-fastfashion](https://www.treehugger.com/sustainable-fashion/recycling-wont-fix-fast-fashion-problem.html)
 
