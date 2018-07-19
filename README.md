@@ -15,6 +15,7 @@
 * [Keras FAQ](https://keras.io/getting-started/faq/)
 * [Convolutional Neural Networks for Fashion Classification and Object Detection](http://cs231n.stanford.edu/reports/2015/pdfs/BLAO_KJAG_CS231N_FinalPaperFashionClassification.pdf)
 * [Fashion and Apparel Classification using Convolutional Neural Networks](http://ceur-ws.org/Vol-2009/fmt-proceedings-2017-paper2.pdf)
+* [Textiles4Textiles](http://ec.europa.eu/environment/eco-innovation/files/docs/infod/2012/t4t_presentation_8-5-2012.pdf)
 * [CBC-recycle](https://www.cbc.ca/news/business/clothes-recycling-marketplace-1.4493490)
 * [Treehugger-fastfashion](https://www.treehugger.com/sustainable-fashion/recycling-wont-fix-fast-fashion-problem.html)
 
